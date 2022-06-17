@@ -10,13 +10,13 @@ import SwiftUI
 @available(iOS 14.0, *)
 struct DropDown<Content: View>: View {
     
-    @State var chevronArrow : String = "chevron.up"
+    @State private var chevronArrow : String = "chevron.up"
     @State private var offset : CGSize = .zero
     
     @ViewBuilder var content: Content
     
     var size : Size
-    var dimension : Double {
+    private var dimension : Double {
         switch size {
         case .small:
             return 1.15
@@ -85,6 +85,7 @@ struct DropDown<Content: View>: View {
         )
     }
 }
+
 @available(iOS 14.0, *)
 struct DropDown_Previews: PreviewProvider {
     static var previews: some View {

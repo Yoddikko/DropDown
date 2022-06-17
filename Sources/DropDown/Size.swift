@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Size { case
+public enum Size { case
     small,
     medium,
     half
