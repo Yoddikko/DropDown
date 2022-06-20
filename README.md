@@ -53,3 +53,5 @@ It is the color of the chevron arrow
 ```swift
 chevronColor: Color
 ```
+### Credits
+Thanks to @carminepo2 for helping me fixing some bugs.
