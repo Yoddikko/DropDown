@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/92546954/174400794-c17abcb5-d908-406c-
 </p>
 
 
-######  DropDown is a package for Swift that creates a drop down view that you can dismiss by dragging it upwards.
+##  DropDown is a package for Swift that creates a drop down view that you can dismiss by dragging it upwards.
 
 ### How to install 
 1. Add it to your project. Click the project name in the file section.
