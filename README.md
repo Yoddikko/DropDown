@@ -54,4 +54,4 @@ It is the color of the chevron arrow
 chevronColor: Color
 ```
 ### Credits
-Thanks to @Carminepo2 for helping me fixing some bugs.
+Thanks to <a href="https://github.com/Carminepo2"> @Carminepo2 </a> for helping me fixing some bugs.
