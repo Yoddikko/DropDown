@@ -30,6 +30,13 @@ public struct DropDown<Content: View>: View {
     var curtainColor: Color
     var chevronColor: Color
     
+    public init(size: Size, curtainColor: Color, chevronColor: Color, @ViewBuilder content: () -> Content) {
+        self.content = content()
+        self.size = size
+        self.curtainColor = curtainColor
+        self.chevronColor = chevronColor
+    }
+    
     public var body: some View {
         //MARK: - Curtain frontend
         ZStack {
@@ -89,32 +96,9 @@ public struct DropDown<Content: View>: View {
 @available(iOS 14.0, *)
 struct DropDown_Previews: PreviewProvider {
     static var previews: some View {
-        DropDown(content: {
+       DropDown(size: .small, curtainColor: .black, chevronColor: .white, content: {
             Text(loremIpsum)
-                .padding()
-                .foregroundColor(.white)
-        },
-                size: .medium,
-                curtainColor: .pink,
-                chevronColor: .white)
-        .previewDevice(PreviewDevice(rawValue: "iPhone 13 Pro Max"))
-        DropDown(content: {
-            Text(loremIpsum)
-                .padding()
-                .foregroundColor(.white)
-        },
-                size: .small,
-                curtainColor: .black,
-                chevronColor: .white)
-        .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
-        DropDown(content: {
-            Text(loremIpsum)
-                .padding()
-                .foregroundColor(.white)
-        },
-                size: .small,
-                curtainColor: .pink,
-                chevronColor: .white)
+        })
         .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
     }
 }

@@ -9,9 +9,10 @@ final class DropDownTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertNil((DropDown(content: {
-            Text("Hello world")
-        }, size: .small, curtainColor: .black, chevronColor: .white))
+        XCTAssertNil(
+            DropDown(size: .small, curtainColor: .black, chevronColor: .white, content: {
+                 Text(loremIpsum)
+             })
         )
     }
 }
