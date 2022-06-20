@@ -34,9 +34,9 @@ https://user-images.githubusercontent.com/92546954/174400794-c17abcb5-d908-406c-
 5. Click add package.
 
 ### How to use 
-1. Add "import DropDown"
-2. 
-3. 
+1. Add "import DropDown".
+2. Create a DropDown element.
+3. Enter all parameters.
 
 ### Code sample
 
@@ -51,8 +51,19 @@ BackgroundView()
 ```
 
 ### Parameters
-- Size 
+- size 
 It his the height of the closed view
 ```
 size: .small, .medium, .half
+```
+
+- curtainColor
+It is the background color of the view
+```
+curtainColor: Color
+```
+- chevronColor
+It is the color of the chevron arrow
+```
+chevronColor: Color
 ```
