@@ -6,7 +6,7 @@
   <img style="text-align:center;" width="200" alt="Icon" src="https://user-images.githubusercontent.com/92546954/174389966-83dc6fba-6ad0-4d07-9c90-77c05bf48559.png">
 </p>
 
-## (still NOT) Working for iPhone 8 to iPhone 13 Pro Max
+######  Working for iPhone 8 to iPhone 13 Pro Max
 
 ## Showcase
 
@@ -16,15 +16,11 @@
 </p>
 
 <p align="center">
-
-
 https://user-images.githubusercontent.com/92546954/174400794-c17abcb5-d908-406c-9b34-13f33fa370fe.mp4
-
-
 </p>
 
 
-### DropDown is a package for Swift that creates a drop down view that you can dismiss by dragging it upwards.
+######  DropDown is a package for Swift that creates a drop down view that you can dismiss by dragging it upwards.
 
 ### How to install 
 1. Add it to your project. Click the project name in the file section.
@@ -40,7 +36,7 @@ https://user-images.githubusercontent.com/92546954/174400794-c17abcb5-d908-406c-
 
 ### Code sample
 
-```
+```swift
 BackgroundView()
   .overlay {
     DropDown(content: {
@@ -51,19 +47,19 @@ BackgroundView()
 ```
 
 ### Parameters
-- size 
+- <b>size</b> -
 It his the height of the closed view
-```
+```swift
 size: .small, .medium, .half
 ```
 
-- curtainColor
+- <b>curtainColor</b> -
 It is the background color of the view
-```
+```swift
 curtainColor: Color
 ```
-- chevronColor
+- <b>chevronColor</b> -
 It is the color of the chevron arrow
-```
+```swift
 chevronColor: Color
 ```
