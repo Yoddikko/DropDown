@@ -39,10 +39,9 @@ https://user-images.githubusercontent.com/92546954/174400794-c17abcb5-d908-406c-
 ```swift
 BackgroundView()
   .overlay {
-    DropDown(content: {
-      Text("Hello world")
-      }, size: .small, curtainColor: .black , chevronColor: .white)
-    }
+      DropDown(size: .small, curtainColor: .black, chevronColor: .white, content: {
+          Text(loremIpsum)
+      })
   }
 ```
 
