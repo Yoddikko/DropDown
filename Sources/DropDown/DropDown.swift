@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 14.0, *)
-struct DropDown<Content: View>: View {
+public struct DropDown<Content: View>: View {
     
     @State private var chevronArrow : String = "chevron.up"
     @State private var offset : CGSize = .zero
@@ -30,7 +30,7 @@ struct DropDown<Content: View>: View {
     var curtainColor: Color
     var chevronColor: Color
     
-    var body: some View {
+    public var body: some View {
         //MARK: - Curtain frontend
         ZStack {
             RoundedRectangle(cornerRadius: 35)
